@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ShopNest - E-commerce Homepage</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Lucide Icons for small symbols (alternative to fonts) -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<style data-purpose="custom-colors">
+    :root {
+      --navy-dark: #111827;
+      --navy-nav: #1f2937;
+      --orange-brand: #f59e0b;
+      --orange-light: #fbbf24;
+    }
+    .bg-navy-dark { background-color: var(--navy-dark); }
+    .bg-navy-nav { background-color: var(--navy-nav); }
+    .bg-orange-brand { background-color: var(--orange-brand); }
+    .text-orange-brand { color: var(--orange-brand); }
+    .border-orange-brand { border-color: var(--orange-brand); }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-900">
+<!-- BEGIN: TopHeader -->
+<header class="bg-navy-nav text-white">
+<!-- Utility Nav -->
+<div class="container mx-auto px-4 py-2 flex justify-between items-center text-xs border-b border-gray-700">
+<div class="flex items-center gap-4">
+<span>Language: English (US) ▼</span>
+</div>
+<div class="flex items-center gap-6">
+<a class="hover:underline" href="#">Help &amp; Contact</a>
+<a class="hover:underline" href="#">My Account</a>
+<a class="hover:underline" href="#">Track Order</a>
+</div>
+</div>
+<!-- Main Header -->
+<div class="container mx-auto px-4 py-4 flex items-center justify-between gap-8">
+<!-- Logo -->
+<div class="text-2xl font-bold flex items-center"><span class="text-orange-brand">Shop</span><span class="text-white">Nest</span></div>
+<!-- Search Bar -->
+<div class="flex-grow max-w-2xl relative">
+<input class="w-full py-2 px-4 pr-10 rounded-sm text-black focus:outline-none" placeholder="Search for products, brands, and more..." type="text"/>
+<div class="absolute right-3 top-2.5 text-gray-500">
+<i class="w-5 h-5" data-lucide="search"></i>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-6">
+<a class="flex items-center gap-1 hover:text-orange-brand" href="#">
+<i class="w-5 h-5" data-lucide="heart"></i>
+<span>Wishlist</span>
+</a>
+<a class="flex items-center gap-1 hover:text-orange-brand relative" href="#">
+<i class="w-5 h-5" data-lucide="shopping-cart"></i>
+<span>Cart</span>
+<span class="absolute -top-2 -right-2 bg-orange-brand text-black text-[10px] font-bold px-1.5 rounded-full">3</span>
+</a>
+<a class="flex items-center gap-2 border-l border-gray-600 pl-4" href="#">
+<div class="w-8 h-8 rounded-full bg-gray-400 overflow-hidden">
+<img alt="User Profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBWnfXyi5AVgfAbK7RYQnsv6MGG94GIZu--xFRO3zNE23HBMh-VqSj_foW-EnrHOHP8GdDLr93SecLOR8gMvCBZ0NL4IH3mZcNao_ykuh06H2dmmBwrsk97P8qnDMlorKOZ0WO4nuX67T79uC6xb020BKJKBovq3PcERO4CLTbNmep9QEpHd5EmgREJMtDq72a9gXt8y5EyO0RwauroarCuJVpli4990wfPWgP8HeOF-9b3EIsJ0D14I9pUVBuTda_Zxdj4-dbS6Y"/>
+</div>
+</a>
+</div>
+</div>
+<!-- Sub Nav -->
+<nav class="bg-navy-dark">
+<div class="container mx-auto px-4">
+<ul class="flex items-center gap-8 py-3 text-sm font-medium overflow-x-auto whitespace-nowrap">
+<li class="flex items-center gap-1 cursor-pointer hover:text-orange-brand">Electronics <i class="w-4 h-4" data-lucide="chevron-down"></i></li>
+<li class="flex items-center gap-1 cursor-pointer hover:text-orange-brand">Fashion <i class="w-4 h-4" data-lucide="chevron-down"></i></li>
+<li class="flex items-center gap-1 cursor-pointer hover:text-orange-brand">Home &amp; Kitchen <i class="w-4 h-4" data-lucide="chevron-down"></i></li>
+<li class="flex items-center gap-1 cursor-pointer hover:text-orange-brand">Beauty &amp; Personal Care <i class="w-4 h-4" data-lucide="chevron-down"></i></li>
+<li class="flex items-center gap-1 cursor-pointer hover:text-orange-brand">Sports &amp; Outdoors <i class="w-4 h-4" data-lucide="chevron-down"></i></li>
+<li class="flex items-center gap-1 cursor-pointer hover:text-orange-brand">Toys &amp; Games <i class="w-4 h-4" data-lucide="chevron-down"></i></li>
+<li class="flex items-center gap-1 cursor-pointer hover:text-orange-brand">Groceries</li>
+</ul>
+</div>
+</nav>
+</header>
+<!-- END: TopHeader -->
+<main class="container mx-auto px-4 py-8">
+<!-- BEGIN: Hero Carousel -->
+<section class="relative mb-12 rounded-xl overflow-hidden shadow-lg bg-blue-50">
+<div class="flex items-center min-h-[400px]">
+<div class="w-1/2 p-12 z-10">
+<h1 class="text-5xl font-extrabold text-navy-dark mb-4">Fashion<br/>Summer Sale</h1>
+<p class="text-xl text-gray-600 mb-8">Brand up with fashion summer sale</p>
+<button class="bg-orange-brand text-black font-bold py-3 px-10 rounded shadow-md hover:bg-orange-400 transition-colors">Shop Now</button>
+</div>
+<div class="w-1/2 h-full absolute right-0 top-0">
+<img alt="Fashion Models" class="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmmpeWpwTNc42_m0XBA1Hv0f1ghi8HoNKCwGm84d3jULiE3GGdgxnNl5YLf6g2mMIsHpPzQi73GPgl67vNICt0s5ond06Hk0eBtR5uJOfGLx7PxwYzIPy2Qds3pW9IbNkN0PrZuzXYOTbxtvYRr8i8Xz3UEXpbkbJH3Yb4YvxXxm5mcH3E9a4wVDgmff1tCmiR1x54oMzTEOuCMLOXlrB5LlYt9vli-e_jseFSLCJam8G3yU9r9gfYYGXszA9z5JofVz1aKuzQGLI"/>
+</div>
+</div>
+<!-- Carousel Arrows -->
+<button class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow hover:bg-white transition">
+<i class="w-6 h-6" data-lucide="chevron-left"></i>
+</button>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow hover:bg-white transition">
+<i class="w-6 h-6" data-lucide="chevron-right"></i>
+</button>
+<!-- Indicators -->
+<div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+<div class="w-3 h-3 bg-white rounded-full"></div>
+<div class="w-3 h-3 bg-white/50 rounded-full"></div>
+<div class="w-3 h-3 bg-white/50 rounded-full"></div>
+</div>
+</section>
+<!-- END: Hero Carousel -->
+<!-- BEGIN: Category Navigation -->
+<section class="grid grid-cols-7 gap-4 mb-12">
+<!-- Category Item -->
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-20 h-20 bg-orange-brand rounded-xl flex items-center justify-center shadow-md group-hover:bg-orange-400 transition">
+<i class="w-10 h-10 text-navy-dark" data-lucide="laptop"></i>
+</div>
+<span class="font-bold text-sm">Electronics</span>
+</div>
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-20 h-20 bg-orange-brand rounded-xl flex items-center justify-center shadow-md group-hover:bg-orange-400 transition">
+<i class="w-10 h-10 text-navy-dark" data-lucide="shirt"></i>
+</div>
+<span class="font-bold text-sm">Fashion</span>
+</div>
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-20 h-20 bg-orange-brand rounded-xl flex items-center justify-center shadow-md group-hover:bg-orange-400 transition">
+<i class="w-10 h-10 text-navy-dark" data-lucide="home"></i>
+</div>
+<span class="font-bold text-sm">Home</span>
+</div>
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-20 h-20 bg-orange-brand rounded-xl flex items-center justify-center shadow-md group-hover:bg-orange-400 transition">
+<i class="w-10 h-10 text-navy-dark" data-lucide="sparkles"></i>
+</div>
+<span class="font-bold text-sm">Beauty</span>
+</div>
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-20 h-20 bg-orange-brand rounded-xl flex items-center justify-center shadow-md group-hover:bg-orange-400 transition">
+<i class="w-10 h-10 text-navy-dark" data-lucide="trophy"></i>
+</div>
+<span class="font-bold text-sm">Sports</span>
+</div>
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-20 h-20 bg-orange-brand rounded-xl flex items-center justify-center shadow-md group-hover:bg-orange-400 transition">
+<i class="w-10 h-10 text-navy-dark" data-lucide="baby"></i>
+</div>
+<span class="font-bold text-sm">Toys</span>
+</div>
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-20 h-20 bg-orange-brand rounded-xl flex items-center justify-center shadow-md group-hover:bg-orange-400 transition">
+<i class="w-10 h-10 text-navy-dark" data-lucide="book-open"></i>
+</div>
+<span class="font-bold text-sm">Books</span>
+</div>
+</section>
+<!-- END: Category Navigation -->
+<!-- BEGIN: Flash Deals -->
+<section class="mb-12">
+<div class="flex justify-between items-center mb-6">
+<h2 class="text-2xl font-bold">Flash Deals</h2>
+<div class="flex items-center gap-4">
+<span class="font-medium">Countdown:</span>
+<div class="flex gap-1">
+<span class="bg-navy-dark text-white px-2 py-1 rounded font-mono">05</span>
+<span class="font-bold">:</span>
+<span class="bg-navy-dark text-white px-2 py-1 rounded font-mono">12</span>
+<span class="font-bold">:</span>
+<span class="bg-navy-dark text-white px-2 py-1 rounded font-mono">45</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-6 gap-4">
+<!-- Flash Deal Card -->
+<div class="bg-white p-3 rounded border border-gray-200 shadow-sm flex flex-col">
+<div class="relative mb-4">
+<span class="absolute top-0 left-0 bg-red-500 text-white text-[10px] px-1 font-bold rounded">-30%</span>
+<img alt="Watch" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb0kzNEQaydZPlahkVkyyVdgAgwzZnXVEHerk7bOpL8mW4jjTZdxTUlFIvb7avZSo1oJXKXkn9XqCXXACTNyjaZBbuIqKhPLfXB0ok01z77arsWunWAe53CFtjw1kdIxdFqqvpLGQ0LgtiuQbcMYsGZ4Cqc46UXuVOoejqpMSi2R4pd6yjcbehmWMuGyl7tcxVI9pUPPdEMNjGoI72V8QkcGVu1YMFIAzGbiGLrQUD-VoAEqN67uedLt4ac6mJRg5UF1zEQ2ej-BU"/>
+</div>
+<h3 class="text-sm font-medium line-clamp-2 mb-2">Apple Watch Smartwatch</h3>
+<div class="mt-auto">
+<div class="flex items-baseline gap-2">
+<span class="text-red-600 font-bold">$17.99</span>
+<span class="text-gray-400 text-xs line-through">$193.00</span>
+</div>
+<button class="w-full mt-3 bg-navy-nav text-white py-1.5 text-sm rounded hover:bg-navy-dark transition">Shop Now</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white p-3 rounded border border-gray-200 shadow-sm flex flex-col">
+<div class="relative mb-4">
+<span class="absolute top-0 left-0 bg-red-500 text-white text-[10px] px-1 font-bold rounded">-38%</span>
+<img alt="Headphones" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJsa4Rb38sD8imRAUzN5hxl7NyniwdfLaN_cdvscYvUidGmzKB6qi-hDM2e-XpDwjscVAHwV9-FrmOCASQeQHlss9K8FlY_aErzU-p85ZUhSRlukn_7p4pvIsdoV-Rkw0afCzUerzV5FXIv8ETA_7F5aZqtHWS3ZqdD7Gz-olichgX-ihx91sCe3DFWBLF_UmH1A20b8xMJDeuAf_Q-ZNi8RcV-11jCUi9mtbbnq0JuIwV8AlCxVetpGAJcWc7Q-gPsY3r0XcK2x4"/>
+</div>
+<h3 class="text-sm font-medium line-clamp-2 mb-2">Apple Route Headphones</h3>
+<div class="mt-auto">
+<div class="flex items-baseline gap-2">
+<span class="text-red-600 font-bold">$12.99</span>
+<span class="text-gray-400 text-xs line-through">$58.69</span>
+</div>
+<button class="w-full mt-3 bg-navy-nav text-white py-1.5 text-sm rounded hover:bg-navy-dark transition">Shop Now</button>
+</div>
+</div>
+<!-- Repeat cards with varied data -->
+<div class="bg-white p-3 rounded border border-gray-200 shadow-sm flex flex-col">
+<div class="relative mb-4">
+<span class="absolute top-0 left-0 bg-red-500 text-white text-[10px] px-1 font-bold rounded">-30%</span>
+<img alt="Dress" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqmI0pPaQaA6H3wYK9DEP1UiyXNrCRSlJbzbAvAxmn-P48P4pXnq8n2VvGmEQJDvSIriH5aL1TAhhKsqM5s-deNjEBoDc6dQpT_oVz-eG89D9j-YvwU03ws-rxO_J2GnioIYmMr5nBPJUzAwSsegTvwKWEjII94bxxq3cB7AJqNnj_Mek3fKblP4u29BPFFDgrUTVdOQTV68HI6Hgqc_VCTxpzI7oR4BSE6yz0aoePsn1t78y6Af49uI_2MhGM4BclC0TM2KhBYuE"/>
+</div>
+<h3 class="text-sm font-medium line-clamp-2 mb-2">Apple Summer dress</h3>
+<div class="mt-auto">
+<div class="flex items-baseline gap-2">
+<span class="text-red-600 font-bold">$24.99</span>
+<span class="text-gray-400 text-xs line-through">$45.99</span>
+</div>
+<button class="w-full mt-3 bg-navy-nav text-white py-1.5 text-sm rounded hover:bg-navy-dark transition">Shop Now</button>
+</div>
+</div>
+<div class="bg-white p-3 rounded border border-gray-200 shadow-sm flex flex-col">
+<div class="relative mb-4">
+<span class="absolute top-0 left-0 bg-red-500 text-white text-[10px] px-1 font-bold rounded">-38%</span>
+<img alt="Blender" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxVrmz7ikQaAybdhPosAjh27K4pLm7aR6zK55UGfU4ZwRFPelHYpMKk3pCz73BCkLNLUHzKFyDMpBW2uT-z_uROH3s2sSuMhEj81h1tRwQLdcmitOZginh1iU6d9zEB3eUp2TNffaYlShThqFC9TXfWca0RX6TsYx0ZlsnC5Tuty1AP_W-5zLctOhd2fezUHh3vElPZVKaeaJ7e9FCla_ciXCQW0-jZMyI5f8xALhSh470P08w13PFOSluhQppLOCOV5Ef_ITxzJw"/>
+</div>
+<h3 class="text-sm font-medium line-clamp-2 mb-2">Apple X Blender</h3>
+<div class="mt-auto">
+<div class="flex items-baseline gap-2">
+<span class="text-red-600 font-bold">$11.99</span>
+<span class="text-gray-400 text-xs line-through">$38.69</span>
+</div>
+<button class="w-full mt-3 bg-navy-nav text-white py-1.5 text-sm rounded hover:bg-navy-dark transition">Shop Now</button>
+</div>
+</div>
+<div class="bg-white p-3 rounded border border-gray-200 shadow-sm flex flex-col">
+<div class="relative mb-4">
+<span class="absolute top-0 left-0 bg-red-500 text-white text-[10px] px-1 font-bold rounded">-28%</span>
+<img alt="Lipstick" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbIRUyK4S30Kix_s-6pbRTJ1Ml2KXg3lZwKHWuxCQbDXNNsOo_wZp-0dJeBdna6mzmcL0RcYjOhsAnpTpqiW1bNam0QKXyfZB5-oL94KzX23IZ7Mq5uHTGn0mjh6JpkI0XaLVWR5GAbPZlot61uk1wiQGmMvWkVvqTjZ1NPe2ZWoDdPlZpW83HX4erk_D0aAMJIoR0bVsAeyXWgUKf76-vZFLiI8NvZdkYEPtNn__kcq8IsT7v8QQRxOWTMo82VgxFZJTokTAA3uk"/>
+</div>
+<h3 class="text-sm font-medium line-clamp-2 mb-2">Suntownoles Pester Diameter</h3>
+<div class="mt-auto">
+<div class="flex items-baseline gap-2">
+<span class="text-red-600 font-bold">$9.99</span>
+<span class="text-gray-400 text-xs line-through">$55.69</span>
+</div>
+<button class="w-full mt-3 bg-navy-nav text-white py-1.5 text-sm rounded hover:bg-navy-dark transition">Shop Now</button>
+</div>
+</div>
+<div class="bg-white p-3 rounded border border-gray-200 shadow-sm flex flex-col">
+<div class="relative mb-4">
+<span class="absolute top-0 left-0 bg-red-500 text-white text-[10px] px-1 font-bold rounded">-90%</span>
+<img alt="Laptop" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWrbi09KbViFst4lju6FsNoye_AnLLmB6WjaKGEQwgHCof93UIk1QFf5wo1RWuUZMbuPoQxCqNq2foOTK7V8WVdGcQxbF-fd8ea6DwskUni-qO1iqKZQoF7cY9upHQTw7CBdgFyvnuEaaI4BYSj2WZh9Cnw_-fI69v0jW-wB0beqOtUWv4m2iAIwYCfN64fgVipXhsVN_03lPQ5wrEL59RWBnR7K1VEfuur-1awfyfwdvuxa20f3kFUxKrRb23dPaUi4sg4wfjeXw"/>
+</div>
+<h3 class="text-sm font-medium line-clamp-2 mb-2">Apple Redsern Electronic</h3>
+<div class="mt-auto">
+<div class="flex items-baseline gap-2">
+<span class="text-red-600 font-bold">$5.90</span>
+<span class="text-gray-400 text-xs line-through">$28.99</span>
+</div>
+<button class="w-full mt-3 bg-navy-nav text-white py-1.5 text-sm rounded hover:bg-navy-dark transition">Shop Now</button>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Flash Deals -->
+<!-- BEGIN: Best Sellers -->
+<section class="mb-12">
+<div class="flex justify-between items-center mb-6">
+<h2 class="text-2xl font-bold">Best Sellers in Electronics</h2>
+<a class="text-sm text-gray-600 flex items-center gap-1 hover:underline" href="#">View all <i class="w-4 h-4" data-lucide="chevron-right"></i></a>
+</div>
+<div class="grid grid-cols-6 gap-4">
+<!-- Best Seller Card -->
+<div class="bg-white p-4 rounded border border-gray-100 shadow-sm flex flex-col">
+<img alt="Laptop" class="w-full h-32 object-contain mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSp_GPeMy8RwH2RdLcx-mVXf7mw_D_GP4xk5_lM8s9NrCON2lO6sYDNd2UmvRX4fuGEoqvjzsnHLAR9xFKQb7yh7l5vnwjh94c09cVPbQsEt6dDfZN142Up6WXTjQai24v5WVlbtYhOiZCLspAARpq141PpE2bmwVLWk31LeyF_yqYFukVS1O7m0_fNyuRUQrRZbq3mdiS5_xhWwqzNHAMnNGqTfURil0FuzBVeAvfubzo-wTI3ttoqRGwAtIpP5ekPjCSYGJu48k"/>
+<h3 class="text-xs font-bold mb-1">Apple Redsern Electronic</h3>
+<div class="flex text-yellow-400 mb-2">
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<span class="text-gray-400 text-[10px] ml-1">(1)</span>
+</div>
+<div class="mt-auto">
+<span class="font-bold text-sm">$12.99</span>
+<button class="w-full mt-2 bg-navy-nav text-white py-1.5 text-[11px] rounded hover:bg-navy-dark transition">Add to Cart</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white p-4 rounded border border-gray-100 shadow-sm flex flex-col">
+<img alt="Watch" class="w-full h-32 object-contain mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD33f25BE43Yr8W8ixWPKAP07I7YBSeIb-Gic9o75nh0hvCDRcg0_e53L3Q-wWtlCDapAoCClfmuaDJuW_t4QQfV9BNJYVL9BzqXBfP9CBiW4OJcq6ncjBs7HrO6r-88lcv1IlAkCuweK4WA9nFqRZ0C2iDnppjiHw4fxpYcOd-dRvLuXs3jdzZI9-bFXwqTs3HloHLTQ5MsiPYuhUw-vUROwerY4X-dIQLtTuqnaEXSk72yn7Rs-Dha4ZMeAIwRq1s10HVGVWSpqk"/>
+<h3 class="text-xs font-bold mb-1">Apple Granin Watch + 7.5</h3>
+<div class="flex text-yellow-400 mb-2">
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<span class="text-gray-400 text-[10px] ml-1">(4)</span>
+</div>
+<div class="mt-auto">
+<span class="font-bold text-sm">$20.99</span>
+<button class="w-full mt-2 bg-navy-nav text-white py-1.5 text-[11px] rounded hover:bg-navy-dark transition">Add to Cart</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white p-4 rounded border border-gray-100 shadow-sm flex flex-col">
+<img alt="Watch" class="w-full h-32 object-contain mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjSyq6bLsSvz2pKVLq2ruK30P2daMkHIZaFaKXvbnPAexN9K0msSf5FfC5qNm9hj0CSmPmdcJ6Xat3NM6bfk8EmYV1zTDtpoFWwFbHVRIIieKvrmnS-13KMCa1QqOzVkesBLMqxtKRE0E7RS96J72RC640HDMLL1a5GGnQIKi-SSulLhbmsZvPN6kMrHgUJUclV9BAGA_Oq4WvlzgvOpQLBlnQnMgXbrTsuYus5DBMdCdxzEvgPEEWzhStWc8o9T9UfGnsGyCrRQY"/>
+<h3 class="text-xs font-bold mb-1">Apple Winnovphone dress</h3>
+<div class="flex text-yellow-400 mb-2">
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3 fill-current" data-lucide="star-half"></i>
+<span class="text-gray-400 text-[10px] ml-1">(3)</span>
+</div>
+<div class="mt-auto">
+<span class="font-bold text-sm">$12.99</span>
+<button class="w-full mt-2 bg-navy-nav text-white py-1.5 text-[11px] rounded hover:bg-navy-dark transition">Add to Cart</button>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-white p-4 rounded border border-gray-100 shadow-sm flex flex-col">
+<img alt="Blender" class="w-full h-32 object-contain mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9I5Cge1HJWsm26pADlTO6EJs7Ctrr6gDfXM7fLhP0Hbrkhx9PP_YpYytS3Z3_mnlyv0crBv8NW2FJDk1pha3aufm5WiJgkvQBf21NUKUjPw_sVb3XIb4DuULCqBXjYYry5ir28GeA-Psjft1_TBPkYCGbggJY4xk1l481Z3nosDS43KEq80fnnqHA29lLiFBq_RoL7ELZuGXPSaCsWNaaykxg1j5Vin3XBEnte8HKU5eIWMEP5XHCMYZcokKT2kKtgAdwehxyPwY"/>
+<h3 class="text-xs font-bold mb-1">Apple X Blender</h3>
+<div class="flex text-yellow-400 mb-2">
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3" data-lucide="star"></i>
+<i class="w-3 h-3" data-lucide="star"></i>
+<span class="text-gray-400 text-[10px] ml-1">(3)</span>
+</div>
+<div class="mt-auto">
+<span class="font-bold text-sm">$34.99</span>
+<button class="w-full mt-2 bg-navy-nav text-white py-1.5 text-[11px] rounded hover:bg-navy-dark transition">Add to Cart</button>
+</div>
+</div>
+<!-- Card 5 (Sale) -->
+<div class="bg-white p-4 rounded border border-gray-100 shadow-sm flex flex-col">
+<div class="relative">
+<span class="absolute -top-1 left-0 bg-red-500 text-white text-[9px] px-1 font-bold rounded">-30%</span>
+<img alt="Watch" class="w-full h-32 object-contain mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBSp1675p0rwgBsJ3XWbbwT1LVrJ8vveGzCo9av7V7Dd1qH9wMa_yl6QkwTlfCSLZ-tJxKCuY8qA7K5ouL8r7HXAa93Jnuu46HAnX_CsLAdXJa244PxnM9jGnkJa4gAJzn72vPRfR7_ceoNPvcMs8GvwziagDP2tACYvpc090Q_3glv8HtewtVN5EYqeA53zXnZbEHuSVVfzzRqJvdNrlSiWn24732e1DZIk3VcSwMatYFMDFr98AWXLah_swLx_BPdchcRVSj5d8"/>
+</div>
+<h3 class="text-xs font-bold mb-1">Apple Watch Smartwatch wiira...</h3>
+<div class="flex text-yellow-400 mb-2">
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3" data-lucide="star"></i>
+<span class="text-gray-400 text-[10px] ml-1">(5)</span>
+</div>
+<div class="mt-auto">
+<span class="font-bold text-sm">$24.99</span>
+<button class="w-full mt-2 bg-navy-nav text-white py-1.5 text-[11px] rounded hover:bg-navy-dark transition">Add to Cart</button>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="bg-white p-4 rounded border border-gray-100 shadow-sm flex flex-col">
+<img alt="Speaker" class="w-full h-32 object-contain mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTS0HFnucOX61gYsmwT8uQTBCBDeOfbkhL-mj9l5eAekuiGVJpDoNXmuMkMqFjLwvdtvNnmWeOF8yvz8i0EkF2mezGHknv6foycw9Akxe85cDijE60VxQnle7iToLnvpat_985q6EYrsJFM_SBZ3hQzIwkpSN-bKmJPPkFj8pTigfbZ-sKJ0VktO-Q-966tyRAX0YnzMxYbc0yEBdMossMAPa4lcXEisLyW4VLL2QTrPmT2O233vWGG3AGsb9wzjJ7fIGn4c1caEI"/>
+<h3 class="text-xs font-bold mb-1">Apple Hest Phone Clammer</h3>
+<div class="flex text-yellow-400 mb-2">
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3" data-lucide="star"></i>
+<i class="w-3 h-3" data-lucide="star"></i>
+<i class="w-3 h-3" data-lucide="star"></i>
+<span class="text-gray-400 text-[10px] ml-1">(2)</span>
+</div>
+<div class="mt-auto">
+<span class="font-bold text-sm">$13.99</span>
+<button class="w-full mt-2 bg-navy-nav text-white py-1.5 text-[11px] rounded hover:bg-navy-dark transition">Add to Cart</button>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Best Sellers -->
+<!-- BEGIN: Recommended -->
+<section class="mb-12">
+<div class="flex justify-between items-center mb-6">
+<h2 class="text-2xl font-bold">Recommended for You</h2>
+<a class="text-sm text-gray-600 flex items-center gap-1 hover:underline" href="#">View all <i class="w-4 h-4" data-lucide="chevron-right"></i></a>
+</div>
+<div class="grid grid-cols-6 gap-4">
+<!-- Card Template (Reused) -->
+<div class="bg-white p-4 rounded border border-gray-100 shadow-sm flex flex-col">
+<img alt="Product" class="w-full h-32 object-contain mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfRti7Y_EgCL4mmPhnKG88o4eMG-HvWo9OKTmZEV3DUdf3GeFzo2C9F-hDX6fMxiEh1515s3MlVZBTIxHjQTEjWmY8-rOKgf-dWcGrKxQo1x76SKIBeikrnSP1kJJXnYIdrumDVrTG98-d66l_N2ce6mBXJ3WFHgE0urIQF1cecZfLHlk-oqwlEh5XYftM6crdq9sTIhScod2Bdp-MGpUhFw97jKbcG_dwrhHDPv59Ch_E16KFfwJgtl2j7IeoPvJT5ApkRi4eHTw"/>
+<h3 class="text-xs font-bold mb-1">Appie Reckern Electronic</h3>
+<div class="flex text-yellow-400 mb-2">
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<i class="w-3 h-3" data-lucide="star"></i>
+<i class="w-3 h-3" data-lucide="star"></i>
+<span class="text-gray-400 text-[10px] ml-1">(3)</span>
+</div>
+<div class="mt-auto">
+<span class="font-bold text-sm">$13.99</span>
+<button class="w-full mt-2 bg-navy-nav text-white py-1.5 text-[11px] rounded hover:bg-navy-dark transition">Add to Cart</button>
+</div>
+</div>
+<div class="bg-white p-4 rounded border border-gray-100 shadow-sm flex flex-col">
+<img alt="Product" class="w-full h-32 object-contain mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCMAdDtR-tpzRpV4w78RnQrPtpDZ52vCp1aewun_E035ZqeCZM2R8gVaO-38Dr2T_cgpZudPz9fEKpTDrtyNnym2TYCcg1LCo_5T_KQHfGe153AJxadexfYFjW1-HYP1gSQSR1ulau3MBXnJSvPsqYZRwH2ChyLjFcognDRcdAhIW1OJYyDVRa7ktywDH1QwJEHjlX1sPohEj5VjB83vNeOmn8Mjhj80baQ03OICIUrGsPZhB37Azawc1zZQaNci0yooLme7YlVWI"/>
+<h3 class="text-xs font-bold mb-1">Appie Outlint Watch + 7.5</h3>
+<div class="flex text-yellow-400 mb-2">
+<i class="w-3 h-3 fill-current" data-lucide="star"></i><i class="w-3 h-3 fill-current" data-lucide="star"></i><i class="w-3 h-3 fill-current" data-lucide="star"></i><i class="w-3 h-3" data-lucide="star"></i><i class="w-3 h-3" data-lucide="star"></i>
+<span class="text-gray-400 text-[10px] ml-1">(3)</span>
+</div>
+<div class="mt-auto">
+<span class="font-bold text-sm">$22.99</span>
+<button class="w-full mt-2 bg-navy-nav text-white py-1.5 text-[11px] rounded hover:bg-navy-dark transition">Add to Cart</button>
+</div>
+</div>
+<div class="bg-white p-4 rounded border border-gray-100 shadow-sm flex flex-col">
+<img alt="Product" class="w-full h-32 object-contain mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxBOxLgJdiWCrdZqg895Vb1TF3O5DX2m-ZxgxNLzott28eTTFOpa2e9f0VagJDtp6u5LWSSBXivSOieS6SQlxj5XZC10kxtpkpvEqzg6M27ra5RLnuBD6QSFdWloDdOWeXJW03N1i_6XleebsCK2dUP00-418E02p8OyZQ4VA9wf2UUNmbe0ztOJddDHx99TDaaYKR_Obth1J8IzJxTZcdebnikz24ObWofla5F5toE7cpZpo8eBON3OfgqYVsigaXZ8u3-mEjCho"/>
+<h3 class="text-xs font-bold mb-1">Appie Winnoxphone dress</h3>
+<div class="flex text-yellow-400 mb-2">
+<i class="w-3 h-3 fill-current" data-lucide="star"></i><i class="w-3 h-3 fill-current" data-lucide="star"></i><i class="w-3 h-3 fill-current" data-lucide="star"></i><i class="w-3 h-3 fill-current" data-lucide="star"></i><i class="w-3 h-3 fill-current" data-lucide="star"></i>
+<span class="text-gray-400 text-[10px] ml-1">(5)</span>
+</div>
+<div class="mt-auto">
+<span class="font-bold text-sm">$23.99</span>
+<button class="w-full mt-2 bg-navy-nav text-white py-1.5 text-[11px] rounded hover:bg-navy-dark transition">Add to Cart</button>
+</div>
+</div>
+<div class="bg-white p-4 rounded border border-gray-100 shadow-sm flex flex-col">
+<img alt="Product" class="w-full h-32 object-contain mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAlzBeye7Ej5fNtgC-bZeRzDGg6ggLBqt3-dMIhOW4bXLFbyPHvbxzUxBWC1JzTQSFMkM8bGEUmbbjLFIzBcGwjQdLa6xm5Da5B9LQxQSdINWdkm20lPdQivfTMB0BA9lCKsuYnhkWSi7Tgq2WRsWM_pd25ZUFtboVNdLFHMwnENxZBrXGywaWYYV0qM4trPYMEAc2KnlZzU3lEBTalyg8DmmEn7iXzqYVJgTWc4PVzmX3tA7sJqknWb0K-K4FRTGAXswtViWR6hQ"/>
+<h3 class="text-xs font-bold mb-1">Appie X cumrilci Blender</h3>
+<div class="flex text-yellow-400 mb-2">
+<i class="w-3 h-3 fill-current" data-lucide="star"></i><i class="w-3 h-3 fill-current" data-lucide="star"></i><i class="w-3 h-3 fill-current" data-lucide="star"></i><i class="w-3 h-3" data-lucide="star"></i><i class="w-3 h-3" data-lucide="star"></i>
+<span class="text-gray-400 text-[10px] ml-1">(3)</span>
+</div>
+<div class="mt-auto">
+<span class="font-bold text-sm">$34.99</span>
+<button class="w-full mt-2 bg-navy-nav text-white py-1.5 text-[11px] rounded hover:bg-navy-dark transition">Add to Cart</button>
+</div>
+</div>
+<div class="bg-white p-4 rounded border border-gray-100 shadow-sm flex flex-col">
+<img alt="Product" class="w-full h-32 object-contain mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrFZicIHpCfxGm1xfQOBPp4kfyKRp1BpwcymVjN6YCtjcmj0fWY_L1opH07Wadk9GlTUlI4ceS4MsXMm41b-PfKLD9GYyaeBrdwwBweiPeIfILs__2l086lC22NpQMbye5zC9gNM9IUpeZN4DaMo_iNMEJgKcM2hxJMQOEGibm8OlMssANu_Fs5_3bUhMRvfgEVZSmbq00RSnUrJpFhvm8EYLSlbbxTslbm8vMsBVBh940kiMCYrNRXHydQDXbu0yPGf3F6s3BKzU"/>
+<h3 class="text-xs font-bold mb-1">Appie Watch Smartwatch wiira...</h3>
+<div class="flex text-yellow-400 mb-2">
+<i class="w-3 h-3 fill-current" data-lucide="star"></i><i class="w-3 h-3 fill-current" data-lucide="star"></i><i class="w-3 h-3 fill-current" data-lucide="star"></i><i class="w-3 h-3" data-lucide="star"></i><i class="w-3 h-3" data-lucide="star"></i>
+<span class="text-gray-400 text-[10px] ml-1">(3)</span>
+</div>
+<div class="mt-auto">
+<span class="font-bold text-sm">$24.99</span>
+<button class="w-full mt-2 bg-navy-nav text-white py-1.5 text-[11px] rounded hover:bg-navy-dark transition">Add to Cart</button>
+</div>
+</div>
+<div class="bg-white p-4 rounded border border-gray-100 shadow-sm flex flex-col">
+<img alt="Product" class="w-full h-32 object-contain mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAArohAOYXsMFYcZohUKry7VLfU0twpzJaP6FI8Mp9ml7bJaL_j8rQMPQ1ELQ881JaDP7JBUWd31VWzyzeR-lZ5gi9YI-TQk5anAM-b92KeIUGLm22D0RyoFheYfnGvp-oavdjED7H8TAf6UeaZ31pU7Y7SMPxwHkzjbnWP1VXHx_RmpyvFymn6PuUYpZjlNUNAippomVcQWsrYE_hnmgVxfwz6Q-iJ66ZHB2dqTP_WujqxBMCOFlHoUvvMq9nF-i6ZjZ2bt_EMiv8"/>
+<h3 class="text-xs font-bold mb-1">Appie Hest Phone Cismmer</h3>
+<div class="flex text-yellow-400 mb-2">
+<i class="w-3 h-3 fill-current" data-lucide="star"></i><i class="w-3 h-3 fill-current" data-lucide="star"></i><i class="w-3 h-3" data-lucide="star"></i><i class="w-3 h-3" data-lucide="star"></i><i class="w-3 h-3" data-lucide="star"></i>
+<span class="text-gray-400 text-[10px] ml-1">(2)</span>
+</div>
+<div class="mt-auto">
+<span class="font-bold text-sm">$13.99</span>
+<button class="w-full mt-2 bg-navy-nav text-white py-1.5 text-[11px] rounded hover:bg-navy-dark transition">Add to Cart</button>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Recommended -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-navy-dark text-gray-300 py-12">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-4 gap-8 mb-12">
+<!-- Col 1 -->
+<div>
+<h4 class="text-white font-bold mb-4">Get to Know Us</h4>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-white" href="#">About Us</a></li>
+<li><a class="hover:text-white" href="#">Careers</a></li>
+<li><a class="hover:text-white" href="#">Press</a></li>
+<li><a class="hover:text-white" href="#">Investor Relations</a></li>
+</ul>
+</div>
+<!-- Col 2 -->
+<div>
+<h4 class="text-white font-bold mb-4">Payment Products</h4>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-white" href="#">ShopNest Credit Card</a></li>
+<li><a class="hover:text-white" href="#">Gift Cards</a></li>
+<li><a class="hover:text-white" href="#">Payment Options</a></li>
+</ul>
+</div>
+<!-- Col 3 -->
+<div>
+<h4 class="text-white font-bold mb-4">Customer Service</h4>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-white" href="#">Help Center</a></li>
+<li><a class="hover:text-white" href="#">Returns &amp; Replacements</a></li>
+<li><a class="hover:text-white" href="#">Shipping Rates</a></li>
+<li><a class="hover:text-white" href="#">Contact Us</a></li>
+</ul>
+</div>
+<!-- Col 4 -->
+<div>
+<h4 class="text-white font-bold mb-4">Sell with ShopNest</h4>
+<ul class="space-y-2 text-sm mb-6">
+<li><a class="hover:text-white" href="#">Sell on ShopNest</a></li>
+<li><a class="hover:text-white" href="#">Fullfillment by ShopNest</a></li>
+</ul>
+<div class="flex gap-2">
+<a href="#"><img alt="App Store" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAuQm70kRyg_98yWJUQb652Pn3i5iW7dOZr9fT2BpgNX66IEKie4lTvKjG8bXT1fZeXJtapPRXnQZ3fvhZF28LOLP37hdsiFKISleUKeH3wSsXA_VWMIjTAfEHtWna3B2OS92ZBI6k1P6joV-8W-I6f7f6ovY3R5PguPVip9z6dZSeUeUZH1i1_EjDLrZo8v4uxuxCtnlDiq3PLy6LlhbMHmiyqoI_OHhlzrITp5vTUAVq-6TOoK1ror45ycPoNw_cR_FekVdgfno"/></a>
+<a href="#"><img alt="Google Play" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3A83YKckjKEuODYOyF0GRJimox1w5098EKRBBThhG6w1-7NNvHe7aZzECsVTjdWlk7b12yY5HFXpvvZE7BnabnMg9RnL3WErG-CXRQdkomlMalprEw2Rbcqk6TOQH31rAvY_hk_4gCCmA7m9awi2sdtKxOO0sw2KPyFBOPJ-U2W_b4lb6tJl_3GRMJF4wImUY_dQCL4Ar03y-vbynhc1d4QT8POukpOb66F7mABE6AwLHSfneGNlTQT0jpmiK3YR8-o6WnSm4ILw"/></a>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8 flex justify-between items-center text-sm">
+<div class="flex gap-4">
+<a class="hover:text-white" href="#"><i class="w-5 h-5" data-lucide="facebook"></i></a>
+<a class="hover:text-white" href="#"><i class="w-5 h-5" data-lucide="twitter"></i></a>
+<a class="hover:text-white" href="#"><i class="w-5 h-5" data-lucide="youtube"></i></a>
+<a class="hover:text-white" href="#"><i class="w-5 h-5" data-lucide="instagram"></i></a>
+<a class="hover:text-white" href="#"><i class="w-5 h-5" data-lucide="twitter"></i></a> <!-- Tik Tok placeholder -->
+</div>
+<p>Copyright © 2023 Shors, Inc.</p>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<script data-purpose="icon-initialization">
+    lucide.createIcons();
+  </script>
+</body></html>
